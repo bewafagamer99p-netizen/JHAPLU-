@@ -13,6 +13,9 @@
             font-family: Arial;
             
         }
+        html{
+    scroll-behavior:smooth;
+}
 
         h1 {
             color: cyan;
@@ -53,11 +56,29 @@
              font-weight: bold;
              box-shadow: 0 0 10px cyan;
         }
+        button:hover{
+    background:cyan;
+    color:black;
+    transform:scale(1.05);
+}
 
         ul {
             list-style-position: outside;
             color:white;
         }
+        
+        .navbar{
+    background:black;
+    padding:10px;
+    border-radius:20px;
+}
+
+.navbar a{
+    color:cyan;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
     </style>
     <meta name="description"
 content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
@@ -68,11 +89,24 @@ content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
 </head>
 
 <body>
-
+  <div class="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#game">Game</a>
+    <a href="#contact">Contact</a>
+</div>
     <h1><i>Welcome to jhaplu's website</i></h1>
-
+    
+    <div id="about">
     <p><b>Intro..</b></p>
     <p>My name is Pushpendra Sahu. I am a student, video-editor, and gaming content creator.I have a YouTube channel named <a href ="https://youtube.com/@jhapluff">Jhaplu ff </a>,</p>
+    </div>
+    
+
+    <hr>
+    <a href="about.html">
+    <button>About Me</button>
+    </a>
 
     <hr>
     <h2>Join us on</h2>
@@ -89,7 +123,7 @@ content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
 
     <hr>
 
-    <h2>Skills</h2>
+    <h2 id="skills">Skills</h2>
 
     <ul>
         <li>video-editing</li>
@@ -104,7 +138,7 @@ content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
 
     <hr>
 
-    <h2>game</h2>
+    <h2 id="game">game</h2>
     <img src ="4.png" height = "200" alt ="freefire01" >
     <img src ="5.png" height = "350" alt ="freefire02" >
     
@@ -114,7 +148,7 @@ content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
     
     <hr>
 
-    <h2>Contact on</h2>
+    <h2 id="contact">Contact on</h2>
     <p>Telegram</p>
     <a href="https://t.me/jhapluty" target="_blank">
         <button>message</button>
@@ -125,6 +159,5 @@ content="Jhaplu FF official website. Gaming, editing, thumbnails and projects.">
 
    <b><p>Made by Pushpendra</p></b>
     
-
 </body>
 </html>
